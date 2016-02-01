@@ -2,7 +2,25 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Portfolio | Martin B. Ramirez</title>
+
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+  </script>
+
+  <script src="js/typed.js"></script>
+
+  <script>
+    $(function(){
+      $(".element").typed({
+        strings: ["^2000", "Hello.^1000 I am Martin."],
+        typeSpeed: 0
+       });
+    });
+  </script>
 
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -11,7 +29,15 @@
 <body>
 
   <div id="center">
-    <h2><span>Hello.</span> I am Martin.</h2>
+    <h1 class="element"><h1>
+  </div>
+
+  <div id="footer">
+    <a href="https://github.com/mbramirez" target="_blank">github</a>
+    <p>|</p>
+    <a href="https://www.linkedin.com/in/mbramirez" target="_blank">linkedin</a>
+    <p>|</p>
+    <a href="images/martin_ramirez_resume.pdf" download>resume</a>
   </div>
 
 </body>

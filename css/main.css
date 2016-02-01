@@ -2,19 +2,71 @@ body {
   background-color: black;
 }
 
-h2 {
-  color: white;
+h1 {
+  font-family: 'Andale Mono', AndaleMono, monospace;
+  color: #00FD52;
+  font-size: 30px;
 }
 
-h2 span {
-  font-weight: bold;
+a {
+  font-family: 'Andale Mono', AndaleMono, monospace;
+  text-decoration: none;
+  color: #00FD52;
+}
+
+#footer p {
+  display: inline;
+  font-family: 'Andale Mono', AndaleMono, monospace;
+  color: #00FD52;
+  text-align: center;
+}
+
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
 
 #center {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 125px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.element {
+  display: inline-block;
+}
+
+.typed-cursor{
+  opacity: 1;
+  color: #00FD52;
+  font-weight: 100;
+  font-size: 30px;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
