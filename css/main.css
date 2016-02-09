@@ -1,72 +1,215 @@
-body {
-  background-color: black;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Andale Mono', AndaleMono, monospace;
-  color: #00FD52;
-  font-size: 30px;
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.project-filter{
+  padding: 2%;
+  padding-top: 8%;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #333;
 }
 
 a {
-  font-family: 'Andale Mono', AndaleMono, monospace;
-  text-decoration: none;
-  color: #00FD52;
+  color: #fff;
+  outline: 0 none;
 }
 
-#footer p {
-  display: inline;
-  font-family: 'Andale Mono', AndaleMono, monospace;
-  color: #00FD52;
-  text-align: center;
+#welcome {
+  height: 100vh;
+  position: relative;
+  background-color: black;
 }
 
+#projects {
+  height: 100vh;
+  position: relative;
+  background-color: white;
+}
 
-#footer {
+.fa-chevron-down {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
+  bottom: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.fa-chevron-up {
+  position: absolute;
+  top: 9px;
+  color: black;
+  z-index: 2;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.center {
+  width: 100%;
   text-align: center;
 }
 
-#center {
-  position: fixed;
+.center-screen {
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+#Container .mix {
+  display: none;
+}
+
+.grid {
+  background: white;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item { width: 33.333%; }
+
+.grid-item--width2 { width: 40%; }
+
+.flip {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.flip-180 {
+  -webkit-transform: translateY(65px) rotate(180deg);
+  -moz-transform: translateY(65px) rotate(180deg);
+  -o-transform: translateY(65px) rotate(180deg);
+  transform: translateY(65px) rotate(180deg);
+  color: black;
 }
 
 .element {
+  font-family: 'Andale Mono', AndaleMono, monospace;
   display: inline-block;
+  font-size: 30px;
+  color: white;
 }
 
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
-  color: #00FD52;
-  font-weight: 100;
+  color: white;
   font-size: 30px;
+  font-weight: 100;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
 
-@keyframes blink{
+@keyframes blink {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
 }
 
-@-webkit-keyframes blink{
+@-webkit-keyframes blink {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
 }
 
-@-moz-keyframes blink{
+@-moz-keyframes blink {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 200px;
+  background: #fff;
+  border: 1px solid #ff2600;
+
+  overflow: hidden;
+}
+
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  max-width: 200px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: #ff2600;
+}
+
+.pace.pace-inactive {
+  display: none;
 }

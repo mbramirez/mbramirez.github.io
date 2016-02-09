@@ -1,17 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Portfolio | Martin B. Ramirez</title>
 
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-  </script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
 
+<body>
+
+  <section id="welcome">
+    <div id="container">
+      <div class="center-screen">
+        <div class="element"></div>
+      </div>
+      <div class="center">
+        <div class="rotating-arrow">
+          <a href="#projects"><i class="fa fa-chevron-down fa-2x flip"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div id="container">
+      <div class="center">
+        <div class="hidden-arrow">
+          <a href="#welcome"><i class="fa fa-chevron-up fa-flip-horizontal fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="project-filter">
+        <button data-filter="*">All</button>
+        <button data-filter=".cat-web">Web</button>
+        <button data-filter=".cat-mobile">Mobile</button>
+        <button data-filter=".cat-ui">UI</button>
+        <button data-filter=".cat-ps">Photoshop</button>
+        <button data-filter=".cat-ai">Illustrator</button>
+        <button data-filter=".cat-arch">Architecture</button>
+        <button data-filter=".cat-resume">Resume</button>
+        <button data-filter=".cat-other">Other</button>
+      </div>
+
+      <section id="Container">
+
+        <div class="grid">
+          <div class="grid-sizer"></div>
+
+          <div class="grid-item element-item cat-arch">
+            <img src="images/ramirezm5a.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-ui">
+            <img src="images/chives-main.png">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/ramirezm3.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/mm.png">
+          </div>
+
+          <div class="grid-item element-item cat-arch">
+            <img src="images/ramirezm5b.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-ui">
+            <img src="images/chives-checkout.png">
+          </div>
+
+          <div class="grid-item element-item cat-other">
+            <img src="images/RamirezM02.jpeg">
+          </div>
+
+          <div class="grid-item element-item cat-web cat-mobile cat-ui">
+            <img src="images/marteen-desktop.png">
+          </div>
+
+          <div class="grid-item element-item cat-arch">
+            <img src="images/apartment.png">
+          </div>
+
+          <div class="grid-item element-item cat-other">
+            <img src="images/fruit-sm.jpeg">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/xa.png">
+          </div>
+
+          <div class="grid-item element-item cat-arch">
+            <img src="images/arch-port.png">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/q-logo.png">
+          </div>
+
+          <div class="grid-item element-item cat-ps cat-other">
+            <img src="images/CharPoseFinal.jpeg">
+          </div>
+
+          <div class="grid-item element-item cat-resume">
+            <a class="popup-link" href="images/informal-resume.png">
+              <img src="images/informal-resume.png">
+            </a>
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/ramirezm3c.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/mbr.png">
+          </div>
+
+          <div class="grid-item element-item cat-ai">
+            <img src="images/ptk_shirt_seal.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/ramirezm3b.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-resume">
+            <a class="popup-link" href="images/resume.png">
+              <img src="images/resume.png">
+            </a>
+          </div>
+
+          <div class="grid-item element-item cat-mobile cat-ui">
+            <img src="images/q-main.png">
+          </div>
+
+          <div class="grid-item element-item cat-mobile cat-ui">
+            <img src="images/marteen-mobile.png">
+          </div>
+
+          <div class="grid-item element-item cat-ps">
+            <img src="images/PTK_Poster.jpg">
+          </div>
+
+          <div class="grid-item element-item cat-ui">
+            <img src="images/chives-shop.png">
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="js/typed.js"></script>
+  <script src="js/pace.min.js"></script>
+  <script src="js/singlePageNav.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
 
   <script>
     $(function(){
@@ -22,23 +181,57 @@
     });
   </script>
 
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
+  <script>
+    var $Container = $('#Container').isotope({
+      itemSelector: '.element-item',
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer'
+      }
+    });
 
-<body>
+    $('.project-filter').on('click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $Container.isotope({ filter: filterValue });
+    })
 
-  <div id="center">
-    <h1 class="element"><h1>
-  </div>
+    $Container.imagesLoaded().progress(function() {
+      $Container.isotope('layout');
+    });
+  </script>
 
-  <div id="footer">
-    <a href="https://github.com/mbramirez" target="_blank">github</a>
-    <p>|</p>
-    <a href="https://www.linkedin.com/in/mbramirez" target="_blank">linkedin</a>
-    <p>|</p>
-    <a href="images/martin_ramirez_resume.pdf" download>resume</a>
-  </div>
+  <script>
+    $(window).scroll(function() {
+      if(window.scrollY >= window.innerHeight/2) {
+        $(".flip").addClass('flip-180');
+
+        $(".flip-180").one('webkitTransitionEnd msTransitionEnd oTransitionEnd transitionend',
+          function() {
+            if(window.scrollY >= window.innerHeight/2) {
+              $(".fa-chevron-up").removeClass("hidden");
+            }
+          })
+      } else {
+        $(".flip").removeClass('flip-180');
+        $(".fa-chevron-up").addClass("hidden");
+      }
+    });
+  </script>
+
+  <script>
+    $('.rotating-arrow').singlePageNav({
+      speed: 1000
+    });
+    $('.hidden-arrow').singlePageNav({
+      speed: 1000
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.popup-link').magnificPopup({type:'image'});
+    });
+  </script>
 
 </body>
 
